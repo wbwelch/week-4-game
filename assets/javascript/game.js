@@ -11,26 +11,27 @@ $(document).ready(function() {
 		wins: 0,
 		losses: 0,
 		totalScore: 51,
-		winMes: "You win!",
-		loseMes: "You lose!",
+		messages: ["You win!", "You lose!"],
 		randNumber: 51,
 		
 		scoreCheck: function() {
 			if (this.totalScore === this.randNumber) {
 				//display you win message
-				$("#win-lose-message").text(this.winMes);
+				$("#win-lose-message").text(this.messages[0]);
 				//++1 to wins
 				++this.wins;
-				//reset game
+				//reset game (new rand number and rand values on crystals)
 			}
 			else if (this.totalScore > this.randNumber) {
 				//display you lose message
+				$("#win-lose-message").text(this.messages[0]);
 				//++1 to losses
-				//reset game
+				++this.losses;
+				//reset game (new rand number and rand values on crystals)
 			}
-			else {
+			//else {
 				//do nothing
-			}
+			//}
 		}
 	};
 	
