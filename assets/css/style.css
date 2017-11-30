@@ -37,23 +37,30 @@ h3 {
 	text-align: center;
 	padding: 5px;
 }
-h2 {
+h2,
+#wins,
+#losses {
 	color: #fff;
 	text-align: left;
-	padding: 10px;
+	padding: 5px;
 }
 p {
 	font: 400 18px/22px Times, "Times New Roman", serif;
 	color: #fff;
 	line-height: 150%;
 	text-align: left;
-	padding: 5px;
+	padding: 10px;
 
 }
-#score {
+#score,
+#random-number {
 	color: #FFFFFF;
 	text-align: center;
+	padding: 5px;
+	font: 700 20px/24px  Times, "Times New Roman", serif;
+	
 }
+
 /*
  ========================================
   Grid
@@ -79,11 +86,18 @@ p {
 }
 #wins-losses {
 	width: 300px;
-	height: 200px;
+	height: 210px;
 	background-color: #000143;
 	margin: 5px;
 	display: inline-block;
 	position: absolute;
+}
+h2 {
+	display: inline-block;
+}
+#wins,
+#losses {
+	display: inline-block;
 }
 #header-box {
 	width: 300px;

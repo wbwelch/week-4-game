@@ -1,4 +1,8 @@
 // JavaScript Document
-$("#score").html("8");
-var score = document.getElementById("#score");
-score.textContent = "8"
+$(document).ready(function() {
+
+	//$('#wins').text('hi')
+	//$('#losses').text('hi')
+	//$('#score').text('hi')
+	//$('#random-number').text('hi')
+});
