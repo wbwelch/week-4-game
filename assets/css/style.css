@@ -23,39 +23,83 @@ body {
  ========================================
 */
 h1 {
-	font: 400 32px/36px  Times, "Times New Roman", serif;
+	font: 300 32px/36px  Times, "Times New Roman", serif;
 }
 h2 {
 	font: 700 20px/24px  Times, "Times New Roman", serif;
 }
+h3 {
+	font: 700 20px/24px  Times, "Times New Roman", serif;
+}
 h1,
-h2 {
-	color: #FFFFFF;
+h3 {
+	color: #fff;
 	text-align: center;
+	padding: 5px;
+}
+h2 {
+	color: #fff;
+	text-align: left;
+	padding: 10px;
 }
 p {
 	font: 400 18px/22px Times, "Times New Roman", serif;
-	color: #;
-	padding: 10px 5px;
+	color: #fff;
 	line-height: 150%;
 	text-align: left;
+	padding: 5px;
+
+}
+#score {
+	color: #FFFFFF;
+	text-align: center;
 }
 /*
  ========================================
   Grid
   ========================================
 */
-#title-box{
+#title-box {
 	background-color: #F3730A;
 	width: 400px;
+	margin: 5px;
 }
-#instr-box{
+#instr-box {
 	background-color: #09A7A7;
 	width: 600px;
+	margin: 5px;
+}
+#random-number {
+	width: 150px;
+	height: 200px;
+	background-color: #000143;
+	margin: 5px;
+	display: inline-block;
+	position: relative;
+}
+#wins-losses {
+	width: 300px;
+	height: 200px;
+	background-color: #000143;
+	margin: 5px;
+	display: inline-block;
+	position: absolute;
 }
 #header-box {
 	width: 300px;
 	background-color: #4A025D;
+	margin: 5px;
+}
+#score-board {
+	width: 300px;
+	height: 200px;
+	background-color: #4A025D;
+	margin: 5px;
+}
+.grouping {
+	width: 600px;
+	position: relative;
+	display: block;
 }
 /* 
 ========================================
@@ -64,4 +108,5 @@ p {
 */
 .crystals {
 	width: 150px;
+	margin: 5px;
 }	

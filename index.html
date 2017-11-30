@@ -8,7 +8,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
-	<script type="text/javascript" src="assets/js/javascript.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 	
 
@@ -33,16 +33,18 @@
 			The values of the crystal change each time the game resets.
 		</p>
 	</div>
-	
-	<div id="random-number"></div>
-	<div id="wins-losses">
-		<p>Wins: 
-			<div id="wins"></div>
-		</p>
-	
-		<p>Losses: 
-			<div id="losses"></div>
-		</p>
+	<div class="grouping">
+		<div id="random-number"></div>
+		<div id="wins-losses">
+			<h2>Wins: 
+				<div id="wins"></div>
+			</h2>
+			
+
+			<h2>Losses: 
+				<div id="losses"></div>
+			</h2>
+		</div>
 	</div>
 	<div id="crystal-board">
 		<img class="crystals" id="multi-cry" src="assets/images/crystals/multi.jpg" alt="multi-colored diamond shaped crystal">
@@ -51,9 +53,11 @@
 		<img class="crystals" id="purple-cry" src="assets/images/crystals/purpleandorange.jpg" alt="purple and orange diamond shaped crystal">
 	</div>
 	<div id="header-box">
-		<h2>Your total score is:</h2>
+		<h3>Your total score is:</h3>
 	</div>
-	<div id="score-board"></div>
+	<div id="score-board">
+		<p id="score"></p>
+	</div>
 
 	
 </body>
