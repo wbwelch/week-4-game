@@ -23,28 +23,45 @@ body {
  ========================================
 */
 h1 {
-	font: 400 22px/26px  Times, "Times New Roman", serif;
+	font: 400 32px/36px  Times, "Times New Roman", serif;
 }
 h2 {
 	font: 700 20px/24px  Times, "Times New Roman", serif;
 }
-h3 {
-	font: 300 18px/24px  Times, "Times New Roman", serif;
-}
 h1,
-h2,
-h3 {
-	color: #4d4848;
+h2 {
+	color: #FFFFFF;
 	text-align: center;
 }
 p {
-	font: 700 24px/28px Times, "Times New Roman", serif;
-	color: #4d4848;
+	font: 400 18px/22px Times, "Times New Roman", serif;
+	color: #;
 	padding: 10px 5px;
 	line-height: 150%;
+	text-align: left;
 }
 /*
  ========================================
   Grid
   ========================================
 */
+#title-box{
+	background-color: #F3730A;
+	width: 400px;
+}
+#instr-box{
+	background-color: #09A7A7;
+	width: 600px;
+}
+#header-box {
+	width: 300px;
+	background-color: #4A025D;
+}
+/* 
+========================================
+ Images
+========================================
+*/
+.crystals {
+	width: 150px;
+}	

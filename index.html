@@ -13,24 +13,49 @@
 	
 
 <body>
-	<h1>
+	<h1 id="title-box">
 		Crystals Collector
 	</h1>
-	<p>
-		You will be given a random number at the start of the game.
-	</p>
-	<p>
-		There are four crystals below. By clicking on a crystal, you will add a specific amount of point to your total score.
-	</p>
-	<p>
-		You win the game by matching your total score to the random number. You lose if your total score goes above the random number.
-	</p>
-	<p>
-		The value of each crystal is hidden from you until you click on it.
-	</p>
-	<p>
-		The values of the crystal change each time the game resets.
-	</p>
+	<div id="instr-box">
+		<p>
+			You will be given a random number at the start of the game.
+		</p>
+		<p>
+			There are four crystals below. By clicking on a crystal, you will add a specific amount of point to your total score.
+		</p>
+		<p>
+			You win the game by matching your total score to the random number. You lose if your total score goes above the random number.
+		</p>
+		<p>
+			The value of each crystal is hidden from you until you click on it.
+		</p>
+		<p>
+			The values of the crystal change each time the game resets.
+		</p>
+	</div>
+	
+	<div id="random-number"></div>
+	<div id="wins-losses">
+		<p>Wins: 
+			<div id="wins"></div>
+		</p>
+	
+		<p>Losses: 
+			<div id="losses"></div>
+		</p>
+	</div>
+	<div id="crystal-board">
+		<img class="crystals" id="multi-cry" src="assets/images/crystals/multi.jpg" alt="multi-colored diamond shaped crystal">
+		<img class="crystals" id="blue-cry" src="assets/images/crystals/blue.jpg" alt="blue diamond shaped crystal">
+		<img class="crystals" id="green-cry" src="assets/images/crystals/green.jpg" alt="green diamond shaped crystal">
+		<img class="crystals" id="purple-cry" src="assets/images/crystals/purpleandorange.jpg" alt="purple and orange diamond shaped crystal">
+	</div>
+	<div id="header-box">
+		<h2>Your total score is:</h2>
+	</div>
+	<div id="score-board"></div>
+
+	
 </body>
 	
 	
