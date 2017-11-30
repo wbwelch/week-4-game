@@ -35,9 +35,13 @@ $(document).ready(function() {
 				//display you win message
 				$("#win-lose-message").text(this.messages[0]);
 				//++1 to wins
-				++this.wins;
+				this.wins++;
+				console.log(wins);
+				$("#wins").text(playerInteract.wins);
 				//reset game (new rand number and rand values on crystals)
 				randNumber = this.gameNumber();
+				$("#random-number").text(randNumber);
+				this.totalScore = 0;
 				//console.log(randNumber);
 				
 			}
@@ -45,20 +49,25 @@ $(document).ready(function() {
 				//display you lose message
 				$("#win-lose-message").text(this.messages[1]);
 				//++1 to losses
-				++this.losses;
+				this.losses++;
+				console.log(this.losses);
+				$("#losses").text(playerInteract.losses);
 				//reset game (new rand number and rand values on crystals)
 				randNumber = this.gameNumber();
+				$("#random-number").text(randNumber);
+				this.totalScore = 0;
 				//console.log(randNumber);
 				multi = playerInteract.crystalNumber();
 				blue = playerInteract.crystalNumber();
 				green = playerInteract.crystalNumber();
 				purpleOrange = playerInteract.crystalNumber();
+				
 	
 				console.log(multi);
 				console.log(blue);
 				console.log(green);
 				console.log(purpleOrange);
-			}
+			};
 		}	//end of scorecheck method
 	};
 	//end of object
@@ -105,29 +114,28 @@ $(document).ready(function() {
 	$( "#multi-cry" ).on( "click", function() {
 		//console.log("test");
 		playerInteract.totalScore = playerInteract.totalScore + multi;
-		console.log("new " +playerInteract.totalScore);
+		//console.log("new " +playerInteract.totalScore);
 		$("#score").text(playerInteract.totalScore);
 		playerInteract.scoreCheck();
-		
 	});
 	$( "#blue-cry" ).on( "click", function() {
 		//console.log("test1");
 		playerInteract.totalScore = playerInteract.totalScore + blue;
-		console.log("new " +playerInteract.totalScore);
+		//console.log("new " +playerInteract.totalScore);
 		$("#score").text(playerInteract.totalScore);
 		playerInteract.scoreCheck();
 	});
 	$( "#green-cry" ).on( "click", function() {
 		//console.log("test2");
 		playerInteract.totalScore = playerInteract.totalScore + green;
-		console.log("new " +playerInteract.totalScore);
+		//console.log("new " +playerInteract.totalScore);
 		$("#score").text(playerInteract.totalScore);
 		playerInteract.scoreCheck();
 	});
 	$( "#purple-cry" ).on( "click", function() {
 		//console.log("test3");
 		playerInteract.totalScore = playerInteract.totalScore + purpleOrange;
-		console.log("new " +playerInteract.totalScore);
+		//console.log("new " +playerInteract.totalScore);
 		$("#score").text(playerInteract.totalScore);
 		playerInteract.scoreCheck();
 	});
@@ -137,10 +145,11 @@ $(document).ready(function() {
 	
 	
 	
-	playerInteract.scoreCheck();
+	//playerInteract.scoreCheck();
 	
-	$("#wins").text(playerInteract.wins);
-	$("#losses").text(playerInteract.losses);
+	
 	//$("#score").text(playerInteract.totalScore);
 	$("#random-number").text(randNumber);
+	
+	
 });
