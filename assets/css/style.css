@@ -60,7 +60,9 @@ p {
 	font: 700 20px/24px  Times, "Times New Roman", serif;
 	
 }
-
+#win-lose-message {
+	text-align: center;
+}
 /*
  ========================================
   Grid
