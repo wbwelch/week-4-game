@@ -20,7 +20,7 @@ $(document).ready(function() {
 	var playerInteract = {
 		wins: 0,
 		losses: 0,
-		totalScore: 91,
+		totalScore: 0,
 		messages: ["You win!", "You lose!"],
 
 		gameNumber: function () {
@@ -89,24 +89,47 @@ $(document).ready(function() {
 	
 	//assign crystal numbers to images
 	
-	$("#multi-cry").text(multi);
-	$("#blue-cry").html(blue);
-	$("#green-cry").html(green);
-	$("#purple-cry").html(purpleOrange);
+	//$("#multi-cry").data(multi);
+	//$("#blue-cry").data(blue);
+	//$("#green-cry").data(green);
+	//$("#purple-cry").data(purpleOrange);
+	
+	//$("#purple-cry").text(multi);
+	//console.log($("#purple-cry").val());
+	
+	
+	
 	
 	//create on click event handler
 	
 	$( "#multi-cry" ).on( "click", function() {
-		console.log("test");
+		//console.log("test");
+		playerInteract.totalScore = playerInteract.totalScore + multi;
+		console.log("new " +playerInteract.totalScore);
+		$("#score").text(playerInteract.totalScore);
+		playerInteract.scoreCheck();
+		
 	});
 	$( "#blue-cry" ).on( "click", function() {
-		console.log("test1");
+		//console.log("test1");
+		playerInteract.totalScore = playerInteract.totalScore + blue;
+		console.log("new " +playerInteract.totalScore);
+		$("#score").text(playerInteract.totalScore);
+		playerInteract.scoreCheck();
 	});
 	$( "#green-cry" ).on( "click", function() {
-		console.log("test2");
+		//console.log("test2");
+		playerInteract.totalScore = playerInteract.totalScore + green;
+		console.log("new " +playerInteract.totalScore);
+		$("#score").text(playerInteract.totalScore);
+		playerInteract.scoreCheck();
 	});
 	$( "#purple-cry" ).on( "click", function() {
-		console.log("test3");
+		//console.log("test3");
+		playerInteract.totalScore = playerInteract.totalScore + purpleOrange;
+		console.log("new " +playerInteract.totalScore);
+		$("#score").text(playerInteract.totalScore);
+		playerInteract.scoreCheck();
 	});
 	
 	//add crystal number click to total score
@@ -118,5 +141,6 @@ $(document).ready(function() {
 	
 	$("#wins").text(playerInteract.wins);
 	$("#losses").text(playerInteract.losses);
-	$("#score").text(playerInteract.totalScore);
+	//$("#score").text(playerInteract.totalScore);
+	$("#random-number").text(randNumber);
 });
