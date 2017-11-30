@@ -7,12 +7,18 @@ $(document).ready(function() {
 	//$('#random-number').text('hi')
 	//$('#win-lose-message').text('hi')
 	
+	var multi = 0;
+	var blue = 0;
+	var green = 0;
+	var purpleOrange = 0;
+	var randNumber = 0;
+	
 	var playerInteract = {
 		wins: 0,
 		losses: 0,
-		totalScore: 51,
+		totalScore: 0,
 		messages: ["You win!", "You lose!"],
-		randNumber: 51,
+
 		
 		scoreCheck: function() {
 			if (this.totalScore === this.randNumber) {
@@ -32,13 +38,14 @@ $(document).ready(function() {
 			//else {
 				//do nothing
 			//}
+		},
+		
+		gameNumber: function () {
+			return Math.floor(Math.random() * (120 - 18 + 1)) + 18;
 		}
 	};
 	
-	$("#wins").text(playerInteract.wins);
-						//console.log(playerInteract.wins)
-	$("#losses").text(playerInteract.losses);
-	$("#score").text(playerInteract.totalScore);
+	
 	playerInteract.scoreCheck();
 	
 	//console tests
@@ -48,9 +55,21 @@ $(document).ready(function() {
 	
 	//generate a random number between 18 and 120 
 	
+	randNumber = playerInteract.gameNumber();
+	
+	console.log(randNumber)
+	
 	//generate a random number between 1 and 12
 	//creat a for loop to assign random number between 1 and 12 to each image
+	
+	Math.floor(Math.random() * 12) + 1  ;
+	
 	//create on click event handler
 	//add random number click to total score
 	
+	
+	
+	$("#wins").text(playerInteract.wins);
+	$("#losses").text(playerInteract.losses);
+	$("#score").text(playerInteract.totalScore);
 });
