@@ -16,21 +16,21 @@ $(document).ready(function() {
 	var playerInteract = {
 		wins: 0,
 		losses: 0,
-		totalScore: 0,
+		totalScore: 31,
 		messages: ["You win!", "You lose!"],
 
 		
 		scoreCheck: function() {
-			if (this.totalScore === this.randNumber) {
+			if (this.totalScore === randNumber) {
 				//display you win message
 				$("#win-lose-message").text(this.messages[0]);
 				//++1 to wins
 				++this.wins;
 				//reset game (new rand number and rand values on crystals)
 			}
-			else if (this.totalScore > this.randNumber) {
+			else if (this.totalScore > randNumber) {
 				//display you lose message
-				$("#win-lose-message").text(this.messages[0]);
+				$("#win-lose-message").text(this.messages[1]);
 				//++1 to losses
 				++this.losses;
 				//reset game (new rand number and rand values on crystals)
@@ -48,9 +48,7 @@ $(document).ready(function() {
 			return Math.floor(Math.random() * (12 - 1+ 1)) + 1;
 		}
 	};
-	
-	
-	playerInteract.scoreCheck();
+	//end of object
 	
 	//console tests
 	console.log(playerInteract.wins);
@@ -76,11 +74,13 @@ $(document).ready(function() {
 	console.log(green);
 	console.log(purpleOrange);
 	
+	//assign crystal numbers to images
+	
 	//create on click event handler
 	
-	//add random number click to total score
+	//add crystal number click to total score
 	
-	
+	playerInteract.scoreCheck();
 	
 	$("#wins").text(playerInteract.wins);
 	$("#losses").text(playerInteract.losses);
