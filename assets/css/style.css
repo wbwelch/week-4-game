@@ -1,3 +1,50 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* 
+========================================
+  Custom Styles
+========================================
+*/
+html {
+  height: 100%;
+}
+body {
+	background-image: url("../images/background/strange_bullseyes.png");
+	background-size: 100%;
+	min-height: 100%;
+	width: 100%;
+	position: absolute;
+	height: auto;
+}
+/*
+ ========================================
+  Typogrophy
+ ========================================
+*/
+h1 {
+	font: 400 22px/26px  Times, "Times New Roman", serif;
+}
+h2 {
+	font: 700 20px/24px  Times, "Times New Roman", serif;
+}
+h3 {
+	font: 300 18px/24px  Times, "Times New Roman", serif;
+}
+h1,
+h2,
+h3 {
+	color: #4d4848;
+	text-align: center;
+}
+p {
+	font: 700 24px/28px Times, "Times New Roman", serif;
+	color: #4d4848;
+	padding: 10px 5px;
+	line-height: 150%;
+}
+/*
+ ========================================
+  Grid
+  ========================================
+*/
